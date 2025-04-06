@@ -32,13 +32,15 @@ This is a Node.js, MongoDB, and GraphQL-based E-commerce backend API with Redis 
 ### 1. Clone the Repo
 
 ```bash
-git clone (https://github.com/sourav-codes/DelighTreeProject.git)
-cd DelighTreeProject
+git clone (https://github.com/sourav-codes/delight-tree-project.git)
+cd delight-tree-project
 
 npm install --legacy-peer-deps
 
 
 npm start
+
+Open :- http://localhost:4000/graphql
 
 Node JS Version 18.8
 
@@ -50,4 +52,4 @@ Built by Sourav Singh(https://github.com/sourav-codes)
 
 MIT License
 
-Open :- http://localhost:4000/graphql
+
