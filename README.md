@@ -44,10 +44,10 @@ Node JS Version 18.8
 
 ## 👤 Author
 
-Built by Sourav Singh(https://github.com/yourusername)
+Built by Sourav Singh(https://github.com/sourav-codes)
 
 ## 📜 License
 
 MIT License
 
-http://localhost:4000/graphql
+Open :- http://localhost:4000/graphql
