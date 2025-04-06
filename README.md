@@ -32,8 +32,8 @@ This is a Node.js, MongoDB, and GraphQL-based E-commerce backend API with Redis 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/ecommerce-api.git
-cd ecommerce-api
+git clone (https://github.com/sourav-codes/DelighTreeProject.git)
+cd DelighTreeProject
 
 npm install --legacy-peer-deps
 
