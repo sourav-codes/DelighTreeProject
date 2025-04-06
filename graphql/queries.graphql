@@ -1,0 +1,61 @@
+# 1. Get Customer Spending
+query GetCustomerSpending {
+  getCustomerSpending(customerId: "e7d22fe7-bee5-4507-bcb8-8b4b999dc9fd") {
+    customerId
+    totalSpent
+    averageOrderValue
+    lastOrderDate
+  }
+}
+
+# 2. Get Top Selling Products
+query GetTopSellingProducts {
+  getTopSellingProducts(limit: 5) {
+    productId
+    name
+    totalSold
+  }
+}
+
+# 3. Get Sales Analytics
+query GetSalesAnalytics {
+  getSalesAnalytics(startDate: "2024-01-01", endDate: "2024-12-31") {
+    totalRevenue
+    completedOrders
+    categoryBreakdown {
+      category
+      revenue
+    }
+  }
+}
+
+# 4. Get Customer Orders (Paginated)
+query GetCustomerOrders {
+  getCustomerOrders(customerId: "e7d22fe7-bee5-4507-bcb8-8b4b999dc9fd", limit: 5, offset: 0) {
+    totalCount
+    orders {
+      _id
+      customerId
+      totalAmount
+      orderDate
+      status
+    }
+  }
+}
+
+# 5. Place Order
+mutation PlaceOrder {
+  placeOrder(
+    customerId: "e7d22fe7-bee5-4507-bcb8-8b4b999dc9fd"
+    products: [
+      { productId: "508220fc-2f77-414e-b9d6-120be0fca340", quantity: 2 }
+      { productId: "productB", quantity: 1 }
+    ]
+  ) {
+    _id
+    customerId
+    totalAmount
+    orderDate
+    status
+  }
+}
